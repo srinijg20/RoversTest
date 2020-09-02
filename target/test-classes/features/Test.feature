@@ -9,6 +9,7 @@ Feature: Rover movement analysis
   Scenario Outline: Rover many movements
     Given rover is at position <x> and <y> and facing <z>
     When I move in the direction "<dir>"
+    Then i will end up at
 
     Examples: 
       | x | y | z | dir        |

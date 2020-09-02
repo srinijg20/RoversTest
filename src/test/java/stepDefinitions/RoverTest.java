@@ -7,6 +7,7 @@ import baseTest.Rover;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class RoverTest extends Rover {
@@ -60,6 +61,12 @@ public class RoverTest extends Rover {
 	public void i_move_in_the_direction(String string) {
 		rover.process(string);
 		System.out.println("Rovers position after moving in direction :" + string);
+		// rover.printPosition();
+	}
+
+	@Then("i will end up at")
+	public void i_will_end_up_at() {
+		System.out.println("Rovers final position :");
 		rover.printPosition();
 	}
 }
