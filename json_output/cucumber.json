@@ -1,0 +1,152 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-02T09:21:55.755Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.RoverTest.roverInitialPosition()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Rover many movements",
+        "description": "",
+        "id": "rover-movement-analysis;rover-many-movements;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "rover is at position 1 and 2 and facing 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 21
+                },
+                {
+                  "val": "2",
+                  "offset": 27
+                },
+                {
+                  "val": "1",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.RoverTest.rover_is_at_position_and_and_facing(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I move in the direction \"LMLMLMLMM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LMLMLMLMM\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.RoverTest.i_move_in_the_direction(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Srini"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-02T09:21:55.954Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.RoverTest.roverInitialPosition()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Rover many movements",
+        "description": "",
+        "id": "rover-movement-analysis;rover-many-movements;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "rover is at position 3 and 3 and facing 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 21
+                },
+                {
+                  "val": "3",
+                  "offset": 27
+                },
+                {
+                  "val": "2",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.RoverTest.rover_is_at_position_and_and_facing(java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I move in the direction \"MMRMMRMRRM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MMRMMRMRRM\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.RoverTest.i_move_in_the_direction(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Srini"
+          }
+        ]
+      }
+    ],
+    "name": "Rover movement analysis",
+    "description": "",
+    "id": "rover-movement-analysis",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Test.feature",
+    "tags": []
+  }
+]
