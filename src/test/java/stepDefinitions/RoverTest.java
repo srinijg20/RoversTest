@@ -53,7 +53,6 @@ public class RoverTest extends Rover {
 
 	@Given("rover is at position {int} and {int} and facing {int}")
 	public void rover_is_at_position_and_and_facing(Integer x, Integer y, Integer z) {
-		rover = new MainTest();
 		rover.setPosition(x, y, z);
 	}
 
